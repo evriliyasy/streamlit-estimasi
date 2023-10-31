@@ -275,4 +275,5 @@ print('akurasi model regresi linier =', score)
 
 # Deployment
 
-![Screenshot 2023-10-31 074621](https://github.com/evriliyasy/streamlit-estimasi/assets/148839476/95abebbd-1227-42b2-bb83-3c06b8fb27e1
+![Screenshot 2023-10-31 074621](https://github.com/evriliyasy/streamlit-estimasi/assets/148839476/e0a51952-65e1-4a99-bcc4-f80094a443ce)
+
