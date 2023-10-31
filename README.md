@@ -200,3 +200,5 @@ print('F1 Score:', f1)
 dan hasil yang saya dapatkan adalah 0.576169839351atau 57.6%, itu berarti model ini memiliki keseimbangan yang baik antara presisi dan recall. Karena kita mencari patokan harga untuk membeli Apartment maka model yang presisi sangat dibutuhkan agar kemungkinan terjadinya kesalahan semakin sedikit.
 
 Deploymenet
+![image](https://github.com/evriliyasy/streamlit-estimasi/assets/148839476/45dc1298-a261-4d63-bed3-cb523d0100ec)
+
