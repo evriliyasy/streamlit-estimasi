@@ -31,7 +31,7 @@ Memperkirakan harga pangan di Daerah Istimewa Yogyakarta untuk menjadi estimasi 
 Proyek ini berguna untuk para ibu-ibu yang membutuhkan jika mereka membeli bahan makanan.
 inilah datasets yang saya ambil (https://www.kaggle.com/datasets/nurcholisart/daftar-harga-pangan-daerah-istimewa-yogyakarta/data).
 
-# Variabel-variabel Daftar Harga Pangan Daerah Istimewa Yogyakarta
+# Variabel-variabel Daftar Harga Pangan Daerah Istimewa Yogyakarta sebagai berikut:
 
 * Beras Termurah = Beras dengan harga terjangkau dengan type (int64)
 * Bawang Merah = dengan type (int64)
@@ -84,7 +84,7 @@ Setelah mengupload filenya, maka kita akan lanjut dengan membuat sebuah folder u
 
 Done, lalu mari kita download datasetsnya
 
-```ptrhon
+```python
 !kaggle datasets download -d nurcholisart/daftar-harga-pangan-daerah-istimewa-yogyakarta
 ```
 
@@ -117,6 +117,9 @@ Untuk melihat beberapa baris terakhir dari sebuah DataFrame.
 ```python
 sns.heatmap(df.isnull())
 ```
+
+![Screenshot (118)](https://github.com/evriliyasy/streamlit-estimasi/assets/148839476/944d9e5c-6916-42cb-adbb-3d7a4c1d8b0d)
+
 menghasilkan statistik deskriptif tentang DataFrame, seperti rata-rata, median, kuartil, dan lainnya, untuk setiap kolom numerik dalam DataFrame
 
 ```python
@@ -128,6 +131,9 @@ Mari kita lanjut dengan visualisai data kita, dan akan munsul atribut yang numer
 plt.figure(figsize=(10,8))
 sns.heatmap(df.corr(), annot=True)
 ```
+
+![Screenshot (119)](https://github.com/evriliyasy/streamlit-estimasi/assets/148839476/23bedc9b-5e49-4063-8e31-313e97676b5e)
+
 Membuat beberapa plot atau garfik
 Pertama membuat grup cabe merah keriting dan bawah merah
 
@@ -142,6 +148,8 @@ fig = plt.figure(figsize=(15,5))
 sns.barplot(x=cabe_merah_keriting['Cabe Merah Keriting'], y=cabe_merah_keriting['numberOfCars'], color='royalblue')
 plt.xticks(rotation=60)
 ```
+![Screenshot (120)](https://github.com/evriliyasy/streamlit-estimasi/assets/148839476/7f60af1a-3bed-4caa-a697-6d6a82a86b1e)
+
 yang Kedua Membuat grup beras termurah dan cabe merah besar
 
 ```python
@@ -154,6 +162,9 @@ Lalu membuat tipikal grafik dalam bentuk barplot
 plt.figure(figsize=(15,5))
 sns.barplot(x=beras_termurah['Beras Termurah'], y=beras_termurah['count'], color='royalblue')
 ```
+![Screenshot (123)](https://github.com/evriliyasy/streamlit-estimasi/assets/148839476/a9e45c3e-f14c-4656-b7ae-4fef2a4f5d2b)
+
+
 ketiga membuat plot menggunakan distribusi atau displot
 
 ```python
@@ -161,12 +172,19 @@ plt.figure(figsize=(10, 5))
 sns.displot(df='Cabe Merah Keriting')
 ```
 
+hasilnya kita mendapatkan nilai distribusi dari cabe merah keriting
+![Screenshot (121)](https://github.com/evriliyasy/streamlit-estimasi/assets/148839476/8b0d74c5-1c17-4f08-8343-341f01419194)
+
+
 Distribusi beras medium
 
 ```python
 plt.figure(figsize=(10, 5))
 sns.displot(df='Beras Medium')
 ```
+hasilnya kita mendapatkan nilai distribusi dari beras medium
+![Screenshot (122)](https://github.com/evriliyasy/streamlit-estimasi/assets/148839476/dd238ec6-cec7-4b35-ad36-3f2bc047490f)
+
 
 kita berhasil melakukan plotdataset, mendeskripsikan dataset dan memberikan informasi dari grafik.
 
