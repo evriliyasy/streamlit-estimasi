@@ -2,7 +2,8 @@ import pickle
 import streamlit as st
 
 # membaca model
-model = pickle.load(open('estimasi_pangan.sav','rb'))
+with open('estimasi_pangan.sav', 'rb') as file:
+    model = pickle.load(file)
 
 #judul web
 st.title('Estimasi Harga Pangan')
